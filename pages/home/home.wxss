@@ -1,22 +1,38 @@
 /* pages/home/home.wxss */
 image {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  animation: 5s rotate infinite;
+  animation-timing-function: linear;
+  box-shadow: 0 0 5px rgba(0, 255, 0, .5);
+  position: relative;
 }
 
-button[type="warn"] {
-  border-radius: 0;
+@keyframes rotate {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+button {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  border-radius: 0;
   width: 100%;
 }
 
-div {
+view:nth-child(1) {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
+}
+
+view > text {
+  display: block;
+  color: gray;
+  font-weight: bold;
 }
