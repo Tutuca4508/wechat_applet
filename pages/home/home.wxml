@@ -1,5 +1,9 @@
 <!--pages/home/home.wxml-->
-<div>
-  <image src="https://sineava.github.io/images/header.jpg"></image>
-  <button type="warn">按钮</button>
-</div>
+<view>
+  <image src="../../assets/tabbar/icon_API.png"></image>
+  <text>点击次数:{{count}}</text>
+  <text>{{user}}</text>
+  <button class="login" type="primary" bindtap="handleBtnClick">{{btn}}</button>
+</view>
+
+<view wx:for="{{list}}" wx:key="id" bindtap="getList">{{item.title}}</view>
