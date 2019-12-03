@@ -1,0 +1,10 @@
+<!-- 允许选择 -->
+<text selectable>hello\n</text>
+<text>world</text>
+
+<!-- 启用连续空格 -->
+<text space='emsp'>11</text>
+
+<!-- 解码 5>3 -->
+<text decode>5 &gt; 3</text>
+<button loading size="mini"></button>
