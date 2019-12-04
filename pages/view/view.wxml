@@ -1,0 +1,7 @@
+<view class="main-view" hover-class="hover-color" hover-stay-time="0">
+  <button bindtap="openPic" size="mini" class='pic' type="primary">打开相册</button>
+  <view class="imgView">
+    <image class="avatar" src="{{avatarUrl}}"/>
+    <image src="{{path}}"></image>
+  </view>
+</view>

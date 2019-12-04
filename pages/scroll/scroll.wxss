@@ -1,0 +1,18 @@
+/* pages/scroll/scroll.wxss */
+.main-view {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sub-view {
+  width: 200px;
+  height: 700px;
+  margin: 20px;
+  background-color: red;
+}
+
+scroll-view {
+  width: 500px;
+  height: 200px;
+  background-color: gray;
+}

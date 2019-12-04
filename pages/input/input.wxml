@@ -1,0 +1,2 @@
+<!--pages/input/input.wxml-->
+<input type="text" placeholder="Name" class="weui-input" focus confirm-type="f"/>
