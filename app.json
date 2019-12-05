@@ -1,6 +1,17 @@
 {
   "pages": [
+    "pages/wxml/wxml",
+    "pages/wxs/wxs",
+    "pages/map/map",
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "components/title/title",
+    "components/main/main",
+    "components/header/header"
+  ],
+  "sitemapLocation": "sitemap18.json",
+  "usingComponents": {
+    "header": "/components/header/header",
+    "title": "/components/title/title"
+  }
 }

@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  position: relative;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header > header:hover::after  {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  opacity: .5;
+  background: linear-gradient(45deg,#FFF6B7,#F6416C);
+  transform: translateX(-8px);
+  border-radius: 5px;
+}

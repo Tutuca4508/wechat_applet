@@ -1,0 +1,9 @@
+module.exports = {
+  name: 'zs',
+  timeStamp: timeStamp
+}
+
+function timeStamp(timeStamp,format = 'yyyy-MM-dd hh:mm:ss') {
+  // 此处不演示
+  return timeStamp
+}

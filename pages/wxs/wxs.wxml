@@ -1,0 +1,21 @@
+<!-- 定义wxs -->
+<wxs module="info">
+  var msg = 'hello';
+  module.exports = {
+    msg: msg
+  }
+</wxs>
+
+<view>{{info.msg}}</view>
+
+<wxs src="wxs.wxs" module="person"/>
+<view>{{person.name}}</view>
+
+<!-- 事件格式化 -->
+<text>{{person.timeStamp('1575472779155','yyyy-mm-dd')}}</text>
+
+<view class="container" class="item">
+  <block wx:for="{{items}}">
+    <text bind:tap="click" data-index="{{index}}" data-item="{{item}}">{{item}}</text>
+  </block>
+</view>

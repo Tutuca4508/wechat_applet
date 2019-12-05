@@ -1,0 +1,38 @@
+<!-- pages/wxml/wxml.wxml -->
+<!-- <text>{{age >= 10 ? '成年人' : '儿童'}}</text>
+<text>{{date}}</text>
+
+<block wx:for="{{movies}}" wx:for-item="movie" wx:if="{{flag}}" wx:key="index">
+  <text>{{movie}}</text>
+  <text>{{index}}</text>
+</block> -->
+
+<!-- <block wx:for="{{arr}}">
+  <block wx:for="{{item}}">
+    <text>{{item}}</text>
+  </block>
+</block> -->
+
+<!-- 模板中包裹的内容未使用前不会进行任何渲染 -->
+<!-- <template name="btn-template"> 
+  <button>{{btn}}</button>
+  <text>{{text}}</text>
+</template> -->
+
+<!-- 导入模板 -->
+<!-- <import src=""> -->
+
+<!-- <template is="btn-template" data="{{btn:'点击',text: 'NO'}}"/>
+<template is="btn-template" data="{{btn:'点击按钮',text: 'YES'}}"/>
+
+<include src="footer.wxml"/>
+<mycom title="组件1"></mycom>
+<mycom title="组件2"></mycom>
+<import src="/components/main/main.wxml"/> -->
+<view class="header">
+  <header name="{{item}}" wx:for="{{vals}}" wx:key="unique" bind:tap='click' data-item="{{item}}"/>
+</view>
+<title>
+  <button>自定义插槽</button>
+</title>
+

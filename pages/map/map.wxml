@@ -1,0 +1,2 @@
+<map class="map" longitude="113.324520" latitude="23.099994"></map>
+<button bindgetuserinfo="getUserInfo" open-type="getUserInfo">点击</button>
