@@ -1,5 +1,4 @@
 <!--pages/home/home.wxml-->
 <div>
-  <image src="https://sineava.github.io/images/header.jpg"></image>
   <button type="warn">按钮</button>
 </div>

@@ -1,0 +1,1 @@
+<button type="primary" size="mini" bind:tap="click">点击</button>
