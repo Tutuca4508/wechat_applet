@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -8,19 +8,11 @@ Page({
 
   },
 
-  showToast() {
-    wx.showToast({
-      title: 'hello',
-      icon: 'loading',
-      duration: 1000
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.showToast()
+
   },
 
   /**
@@ -69,8 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    wx.showShareMenu({
-      withShareTicket: true
-    })
+
   }
 })

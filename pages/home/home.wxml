@@ -1,5 +1,8 @@
 <!--pages/home/home.wxml-->
-<div>
+<!-- <div>
   <image src="https://sineava.github.io/images/header.jpg"></image>
   <button type="warn">按钮</button>
-</div>
+</div> -->
+
+<!-- 页面跳转 -->
+<navigator url="/pages/detail/detail">跳转详情页</navigator>
