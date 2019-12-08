@@ -1,5 +1,19 @@
-<!--pages/home/home.wxml-->
-<div>
-  <image src="https://sineava.github.io/images/header.jpg"></image>
-  <button type="warn">按钮</button>
-</div>
+<!-- 轮播图 -->
+<m-swiper list="{{banners}}" />
+
+<!-- 推荐数据显示 -->
+<m-recommend list="{{recommends}}" bind:imageLoad="handleImageLoad"/>
+
+<!-- 本周流行 -->
+<m-popular />
+
+<!-- tab控制栏 -->
+<m-tab-control list="{{tab_control_list}}" class="{{isTabFixed ? 'fixed' : ''}}" bind:myevent="myclick" id="tab-control"/>
+
+<m-tab-control list="{{tab_control_list}}" wx:if="{{isTabFixed}}"/>
+
+<!-- 展示商品数据 -->
+<m-goods list="{{goods[currentType].list}}" bind:myevent="lower" />
+
+<!-- 回到顶部 注意:hidden对自定义组件无效 -->
+<m-backtop wx:if="{{showBackTop}}"/>

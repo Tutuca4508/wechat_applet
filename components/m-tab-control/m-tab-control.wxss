@@ -1,0 +1,29 @@
+.tab-control {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50rpx;
+  background-color: #fff;
+  padding: 20rpx 0;
+}
+
+.tab-control .tab {
+  font-weight: bold;
+  font-size: 30rpx;
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-control .active::after {
+  content: '';
+  width: 30%;
+  height: 10rpx;
+  background-color: #ff5777;
+  border-radius: 4rpx;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+}

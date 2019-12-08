@@ -1,0 +1,7 @@
+.swiper-img {
+  width: 100%;
+}
+
+.swiper,.swiper-item{
+  height:37vh !important; 
+}

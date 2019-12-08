@@ -1,0 +1,15 @@
+<!-- 商品两栏展示 -->
+<view class="goods">
+  <block wx:for="{{list}}" wx:for-index="key" wx:key="unique">
+    <view class="goods-item">
+      <image src="{{item.show.img}}" class="item-img" mode="widthFix" />
+      <view class="goods-desc">
+        <view class="item-title">{{item.title}}</view>
+        <view class="info">
+          <text class="price">￥{{item.price}}</text>
+          <text class="cfav">{{item.cfav}}件</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

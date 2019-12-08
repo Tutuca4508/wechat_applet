@@ -1,0 +1,36 @@
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.goods-item {
+  width: 48vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-img {
+  width: 100%;
+}
+
+.item-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-size: 22rpx;
+}
+
+.info {
+  font-size: 22rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  color: #ff5777;
+  font-weight: bold;
+}
