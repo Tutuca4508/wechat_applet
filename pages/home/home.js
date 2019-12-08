@@ -1,6 +1,6 @@
 import { getMultiData, getGoodsData } from '../../service/home.js'
 Page({
-
+  
   /**
    * 页面的初始数据
    */
